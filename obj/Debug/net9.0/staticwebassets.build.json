@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "6FxV7mg5uh6jJlkJmOCvlcpgkQ4UBlmEvKHX7vnOfK4=",
+  "Source": "DemoMvc",
+  "BasePath": "_content/DemoMvc",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
