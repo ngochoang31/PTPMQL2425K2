@@ -17,6 +17,20 @@ class BMIModel
     {
         return Weight / (Height * Height);
     }
+
+    // Phương thức phân loại BMI
+    public string GetBMICategory()
+    {
+        double bmi = CalculateBMI();
+        if (bmi < 18.5)
+            return "Thiếu cân";
+        else if (bmi < 24.9)
+            return "Bình thường";
+        else if (bmi < 29.9)
+            return "Thừa cân";
+        else
+            return "Béo phì";
+    }
 }
 
 class Program
@@ -26,8 +40,14 @@ class Program
         // Tạo đối tượng BMIModel với cân nặng 64kg, chiều cao 1m80
         BMIModel person = new BMIModel(64, 1.80);
 
-        // Tính BMI và in kết quả
+        // Tính BMI và phân loại
         double bmiValue = person.CalculateBMI();
+        string category = person.GetBMICategory();
+
+        // Hiển thị kết quả
+        Console.WriteLine($"Cân nặng: {person.Weight} kg");
+        Console.WriteLine($"Chiều cao: {person.Height} m");
         Console.WriteLine($"Chỉ số BMI của bạn là: {bmiValue:F2}");
+        Console.WriteLine($"Phân loại: {category}");
     }
 }
