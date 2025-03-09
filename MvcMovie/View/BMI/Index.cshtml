@@ -1,0 +1,9 @@
+<form asp-action="Index">
+    <label>Nhập Chiều cao:</label>
+    <input type="text" name="Height">
+    <label>Nhập Cân nặng:</label>
+    <input type="text"  name="Weight">
+    <input type="submit" value="Gửi dữ liệu">
+</form>
+<h1>@ViewBag.BMIResult</h1>
+<h1> @ViewBag.FailMessage</h1>
