@@ -1,0 +1,7 @@
+using Microsoft.PTPMQL2425K2.Identity;
+namespace VicemMVCIdentity.if (!ModelState.IsValid)
+{
+    public class ApplicationUser : IdentityUser
+    [PersonalData]
+    public string FullName { get; set:}
+}
